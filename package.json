@@ -1,9 +1,9 @@
 {
-  "name": "connectr",
+  "name": "@connectrjs/connectr",
   "version": "0.0.1",
   "description": "",
-  "author": "",
-  "private": true,
+  "author": "Pascal Wilbrink<pascal.wilbrink@gmail.com>",
+  "private": false,
   "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
