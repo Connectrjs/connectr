@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/connectr/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/connectr/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/connectr",
+  "projects": {
+    "connectr": {
+      "type": "application",
+      "root": "apps/connectr",
+      "entryFile": "main",
+      "sourceRoot": "apps/connectr/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/connectr/tsconfig.app.json"
+      }
+    },
+    "jira": {
+      "type": "library",
+      "root": "libs/jira",
+      "entryFile": "index",
+      "sourceRoot": "libs/jira/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/jira/tsconfig.lib.json"
+      }
+    },
+    "core": {
+      "type": "library",
+      "root": "libs/core",
+      "entryFile": "index",
+      "sourceRoot": "libs/core/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/core/tsconfig.lib.json"
+      }
+    }
+  }
+}
